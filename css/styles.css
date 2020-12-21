@@ -19,11 +19,13 @@ body {
   margin-right: auto;
 }
 
+/* Убираются внешние и внутриние отступы для секции */
 section {
   margin: 0;
   padding: 0;
 }
 
+/* Убираются внешние и внутриние отступы для заголовков */
 h1,
 h2,
 h3,
@@ -43,6 +45,7 @@ li {
   list-style: none;
 }
 
+/* Добавлется стиль для контейнера */
 .container {
   max-width: 1200px;
   padding-left: 15px;
@@ -70,15 +73,18 @@ li {
   color: #000;
 }
 
+/* Стиль нижней границы для хедера */
 .header {
   border-bottom: 1px solid #ececec;
 }
 
+/* Задается свойство Flex контейнеру */
 .header > .container {
   display: flex;
   align-items: center;
 }
 
+/* Задается свойство Flex элементам шапки сайта */
 .header-nav,
 .header-list,
 .header-contacts {
@@ -86,13 +92,10 @@ li {
   align-items: center;
 }
 
+/* Задаются отступы ссылкам навигации всем эелементам кроме последнего */
 .header-list > .header-item:not(:last-child) {
   margin-right: 50px;
 }
-
-/* .header-contacts > .contacts-item:not(:last-child) {
-  margin-right: 50px;
-} */
 
 /* Общие стили для отображения текста ссылок в шапке */
 .header-text {
@@ -110,6 +113,7 @@ li {
   color: var(--text-caption-color);
 }
 
+/* Стили оттображения текущего элемента */
 .current {
   color: var(--accent-color);
 }
@@ -134,9 +138,13 @@ li {
   color: var(--accent-color);
 }
 
-.header-contacts-mail,
+/* Автоматический отступ слева для эелементов "Контакты" */
 .header-contacts {
   margin-left: auto;
+}
+
+/* Отступ справа для элемента "e-mail" */
+.header-contacts-mail {
   margin-right: 50px;
 }
 
@@ -193,17 +201,20 @@ li {
   margin: -1px;
 }
 
+/* Задается свойство Flex элементам раздела "Особенности" */
 .features-list {
   display: flex;
   margin-bottom: 94px;
 }
 
+/* Превращает элементы списка раздела "Особенности" в строчно-блочные */
 .features-item {
   display: inline-block;
   max-width: 270px;
   padding: 0;
 }
 
+/* Задаются отступы элементам списка раздела "Особенности" кроме последнего */
 .features-list > .features-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -225,10 +236,12 @@ li {
   max-width: 270px;
 }
 
+/* Верхний внутрений отступ раздела "Чем мы занимаемся" */
 .occupation {
   padding-bottom: 94px;
 }
 
+/* Задается свойство Flex элементам раздела "Чем мы занимаемся" */
 .occupation-list {
   display: flex;
 }
@@ -242,21 +255,25 @@ li {
   margin-bottom: 50px;
 }
 
+/* Превращает элементы списка раздела "Чем мы занимаемся" в строчно-блочные */
 .occupation-item {
   display: inline-block;
   max-width: 370px;
 }
 
+/* Задаются отступы элементам списка раздела "Чем мы занимаемся" кроме последнего */
 .occupation-list > .occupation-item:not(:last-child) {
   margin-right: 30px;
 }
 
+/* Задаются внутрение отступы и цвет фона карточек */
 .team {
   background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
+/* Задается свойство Flex элементам раздела "Наша команда" */
 .team-list {
   display: flex;
 }
@@ -270,16 +287,19 @@ li {
   margin-bottom: 50px;
 }
 
+/* Задается внутрений отступ, нижнее скругление и цвет фона карточек "Наша команда" */
 .team-item {
   background-color: #fff;
   padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
 }
 
+/* Задаются отступы элементам списка раздела "Наша команда" кроме последнего */
 .team-list > .team-item:not(:last-child) {
   margin-right: 30px;
 }
 
+/* Нижний внешний отступ для изображения  */
 .item-img {
   margin-bottom: 30px;
 }
@@ -307,6 +327,7 @@ li {
   padding-bottom: 60px;
 }
 
+/*  Нижний внешний отступ для логотипа в подвале сайта  */
 .logo {
   display: block;
   margin-bottom: 20px;
@@ -325,6 +346,7 @@ li {
   font-style: normal;
 }
 
+/* Задаются внешние отступы элементам списка в подвале сайта кроме последнего */
 .footer-list > .footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -346,19 +368,23 @@ li {
 
 /* ===================== CSS страницы портфолио ===================== */
 
+/* Внутрение отступы главного раздела страницы "Портфолио" */
 .main-portfolio {
   padding-top: 174px;
   padding-bottom: 94px;
 }
 
+/* выравнивание кнопок по центру */
 .filter-list {
   text-align: center;
 }
 
+/* Превращает элементы списка кнопок "Фильтры" в строчно-блочные для разменщения в одну линию */
 .filter-item {
   display: inline-block;
 }
 
+/* Задается внешний отступ справа элементам списка кнопок "Фильтры" кроме последнего */
 .filter-list > .filter-item:not(:last-child) {
   margin-right: 8px;
 }
@@ -387,13 +413,14 @@ li {
   background-color: var(--accent-color);
 }
 
+/* Задается свойство Flex элементам карточек "Проекты" с переносом строки */
 .projects-list {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
-  /* margin-top: -1px; */
 }
 
+/* Размещаются элементы карточек "Проекты" по три в ряд */
 .projects-item {
   flex-basis: calc(100 / 3 - 10px);
   margin-right: 30px;
@@ -402,10 +429,12 @@ li {
   border: 1px solid #eeeeee;
 }
 
+/* Убирается правые внешние отступы у каждого третего элемента карточек "Проекты" */
 .projects-list > .projects-item:nth-child(3n) {
   margin-right: -30px;
 }
 
+/* Задается нижний внешний отступ для изображения в карточках "Проекты" */
 .projects-img {
   margin-bottom: 20px;
 }
