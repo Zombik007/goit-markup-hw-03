@@ -1,0 +1,229 @@
+/* Оглашение переменных */
+:root {
+  --main-text-color: #757575;
+  --text-caption-color: #212121;
+  --color-white: #fff;
+  --accent-color: #2196f3;
+}
+
+/* Применение наследуемых стилей */
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-text-color);
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+/* Убирается подчеркивание ссылок */
+a {
+  text-decoration: none;
+}
+
+/* Убираются точки для маркированного списка */
+li {
+  list-style: none;
+}
+
+/* Общие стили для Logo */
+.logo-text {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.19em;
+}
+
+/* Цвет частички Web на Logo */
+.logo-header-web,
+.logo-footer-web {
+  color: var(--accent-color);
+}
+
+/* Цвет частички Studio на Logo */
+.logo-header-studio {
+  color: #000;
+}
+
+/* Общие стили для отображения текста ссылок в шапке */
+.header-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
+}
+
+/* Цвет текста ссылок в шапке */
+.header-nav-link {
+  color: var(--text-caption-color);
+}
+
+.current {
+  color: var(--accent-color);
+}
+
+/* Цвет текста ссылок в шапке при наведении */
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: var(--accent-color);
+}
+
+/* Цвет текста контактов в шапке */
+.header-contacts-mail,
+.header-contacts-tel {
+  color: var(--main-text-color);
+}
+
+/* Цвет текста контактов в шапке при наведении */
+.header-contacts-mail:hover,
+.header-contacts-mail:focus,
+.header-contacts-tel:hover,
+.header-contacts-tel:focus {
+  color: var(--accent-color);
+}
+
+/* Стили главного раздела страницы "Студия" */
+/* Фоновый цвет секции "Герой" */
+.hero {
+  background: #2f303a;
+}
+
+/* Cтили для главного заголовка */
+.hero-caption {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36em;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+/* Стили кнопки секции "Герой" */
+.hero-link {
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--color-white);
+  background-color: var(--accent-color);
+}
+
+/* Стили для "невидимых" заголовков */
+.visually-hiden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/* Стили заголовков раздела "Особенности" */
+.features-caption {
+  font-size: 14px;
+  line-height: 1.14em;
+  text-transform: uppercase;
+  color: var(--text-caption-color);
+}
+
+/* Стили текста раздела "Особенности" */
+.features-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71em;
+}
+
+/* Стили заголовка раздела "Чем мы занимаемся" */
+.occupation-caption {
+  font-size: 36px;
+  line-height: 1.17em;
+  text-align: center;
+  color: var(--text-caption-color);
+}
+
+/* Стили заголовков раздела "Наша команда" */
+.team-caption {
+  font-size: 36px;
+  line-height: 1.17em;
+  text-align: center;
+  color: var(--text-caption-color);
+}
+
+/* Стили заголовков карточек раздела "Наша команда" */
+.item-caption {
+  font-weight: 500;
+  line-height: 19px;
+  text-align: center;
+  color: var(--text-caption-color);
+}
+
+/* Стили текста карточек раздела "Наша команда" */
+.item-text {
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
+}
+
+/* Фон подвала */
+.footer {
+  background-color: #2f303a;
+}
+
+/* Стили логотипа подвала */
+.logo-footer-studio {
+  color: var(--color-white);
+}
+
+/* Общие стили текста подвала */
+.footer-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71em;
+  font-style: normal;
+}
+
+/* Цвет адреса подвала */
+.footer-address-item {
+  color: var(--color-white);
+}
+
+/* Цвет ссылки елктронной почты */
+.footer-contacts-mail {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Цвет ссылки телефона */
+.footer-contacts-tel {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* CSS страницы портфолио */
+
+/* Стили кнопок фильтра */
+.filter-item {
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
+  color: var(--text-caption-color);
+}
+
+/* Стили кнопок при наведении */
+.filter-item:hover,
+.filter-item:focus {
+  color: var(--color-white);
+  background-color: var(--accent-color);
+}
+
+/* Стили заголовков карточек на странице "Портфолио" */
+.projects-caption {
+  font-size: 18px;
+  line-height: 2em;
+  letter-spacing: 0.06em;
+  color: var(--text-caption-color);
+}
+
+/* Стили текста карточек на странице "Портфолио" */
+.projects-text {
+  font-weight: 400;
+  line-height: 30px;
+}
