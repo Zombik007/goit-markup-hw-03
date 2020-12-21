@@ -19,9 +19,10 @@
   </head>
 
   <body>
-    <div class="container">
+    
       <!-- Шапка сайта -->
       <header class="header">
+        <div class="container">
         <nav class="header-nav">
           <a href="./index.html">
             <span class="logo-text logo-header-web">Web</span
@@ -62,31 +63,39 @@
             >
           </li>
         </ul>
+        </div>
       </header>
       <!-- /Шапка сайта -->
 
       <!-- Главниый раздел -->
       <main class="portfolio">
         <section class="main-portfolio">
+          <div class="container">
           <h1 class="visually-hiden">Наше портфлио</h1>
           <!-- Кнопки "Фильтры" -->
           <h2 class="visually-hiden">Фильтр проектов</h2>
           <ul class="filter-list">
-            <li><button class="filter-item" type="button">Все</button></li>
-            <li>
-              <button class="filter-item" type="button">Веб-сайты</button>
+            <li class="filter-item">
+              <button class="filter-button" type="button">Все</button>
             </li>
-            <li>
-              <button class="filter-item" type="button">Приложения</button>
+            <li class="filter-item">
+              <button class="filter-button" type="button">Веб-сайты</button>
             </li>
-            <li><button class="filter-item" type="button">Дизайн</button></li>
-            <li>
-              <button class="filter-item" type="button">Маркетинг</button>
+            <li class="filter-item">
+              <button class="filter-button" type="button">Приложения</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-button" type="button">Дизайн</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-button" type="button">Маркетинг</button>
             </li>
           </ul>
+          </div>
           <!-- /Кнопки "Фильтры" -->
 
           <!-- Карточки "Проекты"-->
+          <div class="container">
           <h2 class="visually-hiden">Наши проекты</h2>
           <ul class="projects-list">
             <li class="projects-item">
@@ -141,7 +150,7 @@
                 alt=""
               />
               <h2 class="projects-caption">Inspiration has no Borders</h2>
-              <p>Веб-сайт</p>
+              <p class="projects-text">Веб-сайт</p>
             </li>
             <li class="projects-item">
               <img
@@ -171,25 +180,27 @@
               <p class="projects-text">Приложение</p>
             </li>
           </ul>
+          </div>
         </section>
         <!-- /Каточки "Проекты"-->
       </main>
       <!-- /Главниый раздел -->
 
       <!-- Подвал страницы -->
-      <footer class="footer">
+   <footer class="footer">
+      <div class="container">
         <a class="logo" href="">
           <span class="logo-text logo-footer-web">Web</span
           ><span class="logo-text logo-footer-studio">Studio</span>
         </a>
         <address class="">
           <ul class="footer-list">
-            <li class="footer-list-item">
+            <li class="footer-item">
               <p class="footer-text footer-address-item">
                 г. Киев, пр-т Леси Украинки, 26
               </p>
             </li>
-            <li class="footer-list-item">
+            <li class="footer-item">
               <a
                 class="footer-text footer-contacts-mail"
                 href="mailto:info@devstudio.com"
@@ -197,7 +208,7 @@
                 info@devstudio.com
               </a>
             </li>
-            <li class="footer-list-item">
+            <li class="footer-item">
               <a
                 class="footer-text footer-contacts-tel"
                 href="tel:+380961111111"
@@ -207,7 +218,8 @@
             </li>
           </ul>
         </address>
-      </footer>
+      </div>
+    </footer>
       <!-- /Подвал страницы -->
     </div>
   </body>

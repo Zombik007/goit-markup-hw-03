@@ -22,61 +22,68 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="container">
+    
       <!-- Шапка сайта -->
       <header class="header">
-        <nav class="header-nav">
-          <a href="./index.html">
-            <span class="logo-text logo-header-web">Web</span
-            ><span class="logo-text logo-header-studio">Studio</span>
-          </a>
+        <div class="container">
+          <nav class="header-nav">
+            <a href="./index.html">
+              <span class="logo-text logo-header-web">Web</span
+              ><span class="logo-text logo-header-studio">Studio</span>
+            </a>
 
-          <ul class="header-list">
-            <li class="header-item">
-              <a class="current header-text header-nav-link" href="./index.html"
-                >Студия</a
+            <ul class="header-list">
+              <li class="header-item">
+                <a class="current header-text header-nav-link" href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="header-item">
+                <a class="header-text header-nav-link" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="header-item">
+                <a class="header-text header-nav-link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="header-text header-contacts">
+            <li class="contacts-item">
+              <a
+                class="header-text header-contacts-mail"
+                href="mailto:info@devstudio.com"
               >
+                info@devstudio.com
+              </a>
             </li>
-            <li class="header-item">
-              <a class="header-text header-nav-link" href="./portfolio.html"
-                >Портфолио</a
+            <li class="contacts-item">
+              <a class="header-text header-contacts-tel" href="tel:+380961111111"
+                >+38 096 111 11 11</a
               >
-            </li>
-            <li class="header-item">
-              <a class="header-text header-nav-link" href="">Контакты</a>
             </li>
           </ul>
-        </nav>
-
-        <ul class="header-text header-contacts">
-          <li>
-            <a
-              class="header-text header-contacts-mail"
-              href="mailto:info@devstudio.com"
-            >
-              info@devstudio.com
-            </a>
-          </li>
-          <li>
-            <a class="header-text header-contacts-tel" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
       </header>
       <!-- /Шапка сайта -->
+    </div>
 
-      <!-- Главниый раздел -->
-      <main class="main">
-        <!-- Секция "Герой" -->
-        <section class="hero">
+    <!-- Главниый раздел -->
+    <main class="main">
+      <!-- Секция "Герой" -->
+
+      <section class="hero">
+        <div class="container">
           <h1 class="hero-caption">Эффективные решения для вашего бизнеса</h1>
           <a class="hero-link" href="">Заказать услугу</a>
-        </section>
-        <!-- /Секция "Герой" -->
+        </div>
+      </section>
+      <!-- /Секция "Герой" -->
 
-        <!-- Раздел "Особенности" -->
-        <section class="features">
+      <!-- Раздел "Особенности" -->
+      <section class="features">
+        <div class="container">
           <h2 class="visually-hiden">Почему мы?</h2>
           <ul class="features-list">
             <li class="features-item">
@@ -108,11 +115,13 @@
               </p>
             </li>
           </ul>
-        </section>
-        <!-- /Раздел "Особенности" -->
+        </div>
+      </section>
+      <!-- /Раздел "Особенности" -->
 
-        <!-- Раздел "Чем мы занимаемся" -->
-        <section class="occupation">
+      <!-- Раздел "Чем мы занимаемся" -->
+      <section class="occupation">
+        <div class="container">
           <h2 class="occupation-caption">Чем мы занимаемся</h2>
           <ul class="occupation-list">
             <li class="occupation-item">
@@ -140,11 +149,13 @@
               />
             </li>
           </ul>
-        </section>
-        <!-- /Раздел "Чем мы занимаемся" -->
+        </div>
+      </section>
+      <!-- /Раздел "Чем мы занимаемся" -->
 
-        <!-- Секция "Наша команда" -->
-        <section class="team">
+      <!-- Секция "Наша команда" -->
+      <section class="team">
+        <div class="container">
           <h2 class="team-caption">Наша команда</h2>
           <ul class="team-list">
             <li class="team-item">
@@ -157,7 +168,7 @@
               <h3 class="item-caption">Игорь Демьяненко</h3>
               <p class="item-text">Product Designer</p>
             </li>
-            <li class="">
+            <li class="team-item">
               <img
                 class="item-img"
                 src="./images/img2.jpg"
@@ -188,25 +199,27 @@
               <p class="item-text">UI Designer</p>
             </li>
           </ul>
-        </section>
-        <!-- /Секция "Наша команда" -->
-      </main>
-      <!-- /Главниый раздел -->
+        </div>
+      </section>
+      <!-- /Секция "Наша команда" -->
+    </main>
+    <!-- /Главниый раздел -->
 
-      <!-- Подвал этой страницы -->
-      <footer class="footer">
+    <!-- Подвал этой страницы -->
+    <footer class="footer">
+      <div class="container">
         <a class="logo" href="">
           <span class="logo-text logo-footer-web">Web</span
           ><span class="logo-text logo-footer-studio">Studio</span>
         </a>
         <address class="">
           <ul class="footer-list">
-            <li class="footer-list-item">
+            <li class="footer-item">
               <p class="footer-text footer-address-item">
                 г. Киев, пр-т Леси Украинки, 26
               </p>
             </li>
-            <li class="footer-list-item">
+            <li class="footer-item">
               <a
                 class="footer-text footer-contacts-mail"
                 href="mailto:info@devstudio.com"
@@ -214,7 +227,7 @@
                 info@devstudio.com
               </a>
             </li>
-            <li class="footer-list-item">
+            <li class="footer-item">
               <a
                 class="footer-text footer-contacts-tel"
                 href="tel:+380961111111"
@@ -224,8 +237,8 @@
             </li>
           </ul>
         </address>
-      </footer>
-      <!-- /Подвал этой страницы -->
-    </div>
+      </div>
+    </footer>
+    <!-- /Подвал этой страницы -->
   </body>
 </html>
