@@ -16,6 +16,20 @@ body {
   letter-spacing: 0.03em;
 }
 
+section {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 /* Убирается подчеркивание ссылок */
 a {
   text-decoration: none;
@@ -24,6 +38,14 @@ a {
 /* Убираются точки для маркированного списка */
 li {
   list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Общие стили для Logo */
@@ -43,6 +65,22 @@ li {
 .logo-header-studio {
   color: #000;
 }
+
+.header,
+.header-contacts,
+.header-nav,
+.header-list,
+.features-list,
+.occupation-list,
+.team-list,
+.filter-list,
+.projects-list {
+  display: flex;
+}
+
+/* .header {
+  justify-content: baseline;
+} */
 
 /* Общие стили для отображения текста ссылок в шапке */
 .header-text {
@@ -84,6 +122,9 @@ li {
 /* Стили главного раздела страницы "Студия" */
 /* Фоновый цвет секции "Герой" */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 280px;
+  text-align: center;
   background: #2f303a;
 }
 
@@ -95,18 +136,30 @@ li {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--color-white);
 }
 
 /* Стили кнопки секции "Герой" */
 .hero-link {
   line-height: 30px;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--color-white);
   background-color: var(--accent-color);
+  padding: 10px 32px;
+  cursor: pointer;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 200px;
+  border-radius: 4px;
 }
 
 /* Стили для "невидимых" заголовков */
@@ -116,6 +169,10 @@ li {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+.features-item:not(:last-child) {
+  margin-left: 30px;
 }
 
 /* Стили заголовков раздела "Особенности" */
@@ -131,7 +188,12 @@ li {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71em;
+  max-width: 270px;
 }
+
+/* .occupation-list {
+  display: flex;
+} */
 
 /* Стили заголовка раздела "Чем мы занимаемся" */
 .occupation-caption {
@@ -140,6 +202,14 @@ li {
   text-align: center;
   color: var(--text-caption-color);
 }
+
+.occupation-item {
+  margin: 30px;
+}
+
+/* .team-list {
+  display: flex;
+} */
 
 /* Стили заголовков раздела "Наша команда" */
 .team-caption {
@@ -197,7 +267,7 @@ li {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* CSS страницы портфолио */
+/* ===================== CSS страницы портфолио ===================== */
 
 /* Стили кнопок фильтра */
 .filter-item {
@@ -205,6 +275,7 @@ li {
   line-height: 26px;
   text-align: center;
   color: var(--text-caption-color);
+  cursor: pointer;
 }
 
 /* Стили кнопок при наведении */
