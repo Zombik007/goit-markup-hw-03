@@ -155,7 +155,6 @@ li {
   padding-bottom: 200px;
   text-align: center;
   background: #2f303a;
-  margin-bottom: 94px;
 }
 
 /* Cтили для главного заголовка */
@@ -201,10 +200,14 @@ li {
   margin: -1px;
 }
 
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* Задается свойство Flex элементам раздела "Особенности" */
 .features-list {
   display: flex;
-  margin-bottom: 94px;
 }
 
 /* Превращает элементы списка раздела "Особенности" в строчно-блочные */
@@ -370,7 +373,7 @@ li {
 
 /* Внутрение отступы главного раздела страницы "Портфолио" */
 .main-portfolio {
-  padding-top: 174px;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -436,7 +439,16 @@ li {
 
 /* Задается нижний внешний отступ для изображения в карточках "Проекты" */
 .projects-img {
-  margin-bottom: 20px;
+  display: block;
+}
+
+.projects-block {
+  display: inline-block;
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  max-width: 370px;
 }
 
 /* Стили заголовков карточек на странице "Портфолио" */
@@ -446,14 +458,10 @@ li {
   letter-spacing: 0.06em;
   color: var(--text-caption-color);
   margin-bottom: 4px;
-  margin-left: 24px;
-  margin-right: 24px;
 }
 
 /* Стили текста карточек на странице "Портфолио" */
 .projects-text {
   font-weight: 400;
   line-height: 30px;
-  margin-left: 24px;
-  margin-right: 24px;
 }
