@@ -427,7 +427,6 @@ li {
 .projects-item {
   flex-basis: calc(100 / 3 - 10px);
   margin-right: 30px;
-  padding-bottom: 20px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
 }
@@ -443,7 +442,7 @@ li {
 }
 
 .projects-block {
-  display: inline-block;
+  /*display: inline-block;*/
   padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;
