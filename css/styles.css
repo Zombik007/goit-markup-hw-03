@@ -441,8 +441,8 @@ li {
   display: block;
 }
 
+/* Оборачивается текст карточек "Портфолио" в единый блок */
 .projects-block {
-  /*display: inline-block;*/
   padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;
